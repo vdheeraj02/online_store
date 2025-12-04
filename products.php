@@ -12,12 +12,15 @@ $params = [];
 $types  = '';
 
 if ($search !== '') {
-    $sql .= " AND (name LIKE ? OR description LIKE ?)";
+    $sql .= " AND (name LIKE ? OR category LIKE ?)";
     $like = "%$search%";
-    $params[] = $like;
-    $params[] = $like;
+    $params[] = $like;   // name
+    $params[] = $like;   // category
     $types   .= 'ss';
 }
+
+
+
 
 if ($category !== '') {
     $sql .= " AND category = ?";
