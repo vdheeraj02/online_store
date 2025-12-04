@@ -1,0 +1,189 @@
+// Home page – full-width
+
+// Stretch carousel edge-to-edge
+#homeCarousel {
+  margin-top: -3px;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+  width: 100vw;
+}
+
+// Slider images
+.slider-img {
+  width: 100%;
+  height: calc(100vh - 80px);
+  object-fit: cover;
+  display: block;
+  filter: none;
+}
+
+// Ensure each slide can hold captions
+#homeCarousel .carousel-item {
+  position: relative;
+}
+
+#homeCarousel .carousel-item::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.1);
+  z-index: 1;
+}
+
+#homeCarousel .carousel-item img {
+  position: relative;
+  z-index: 0;
+}
+
+#homeCarousel .carousel-caption {
+  z-index: 2;
+}
+
+// Arrows – white circular buttons
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-image: none;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 999px;
+  border: 2px solid #ffffff;
+  position: relative;
+}
+
+.carousel-control-prev-icon::before,
+.carousel-control-next-icon::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  border-style: solid;
+  border-width: 0.35rem 0.35rem 0 0;
+  width: 0.9rem;
+  height: 0.9rem;
+  transform-origin: center;
+}
+
+.carousel-control-prev-icon::before {
+  border-color: #ffffff;
+  transform: rotate(-135deg); // left arrow
+}
+
+.carousel-control-next-icon::before {
+  border-color: #ffffff;
+  transform: rotate(45deg); // right arrow
+}
+
+// Slider dots
+.carousel-indicators [data-bs-target] {
+  background-color: #ffffff;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  opacity: 0.7;
+}
+
+.carousel-indicators .active {
+  opacity: 1;
+}
+
+// Featured products – full width row
+
+.featured-section {
+  background: transparent;
+}
+
+/* Full width carousel */
+.featured-carousel {
+  width: 100vw;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  padding: 0 2rem; // space for arrows on sides
+  position: relative;
+}
+
+.featured-row {
+  width: 100%;
+  min-height: 320px;
+  padding: 0 4vw; // pushes items closer to arrows
+  display: flex;
+  justify-content: space-evenly !important;
+  align-items: flex-start;
+}
+
+/* Each product in slider */
+.featured-item {
+  flex: 0 1 330px;
+  max-width: 330px;
+  color: #ffffff;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.featured-image-wrapper {
+  width: 100%;
+  height: 230px; // taller images
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.featured-image {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+.featured-name {
+  margin-top: 1.2rem;
+  font-size: 1.2rem; // bigger text
+  font-weight: 550 !important;
+  text-transform: uppercase;
+  line-height: 1.3;
+}
+
+/* arrows for featured slider */
+.featured-carousel .carousel-control-prev,
+.featured-carousel .carousel-control-next {
+  width: 4rem;
+}
+
+.featured-carousel .carousel-control-prev-icon,
+.featured-carousel .carousel-control-next-icon {
+  background-image: none;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 999px;
+  border: 2px solid #ffffff;
+  position: relative;
+}
+
+.featured-carousel .carousel-control-prev-icon::before,
+.featured-carousel .carousel-control-next-icon::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  border-style: solid;
+  border-width: 0.3rem 0.3rem 0 0;
+  width: 0.7rem;
+  height: 0.7rem;
+  transform-origin: center;
+}
+
+.featured-carousel .carousel-control-prev-icon::before {
+  border-color: #ffffff;
+  transform: rotate(-135deg);
+}
+
+.featured-carousel .carousel-control-next-icon::before {
+  border-color: #ffffff;
+  transform: rotate(45deg);
+}
+
+.featured-carousel .carousel-indicators {
+  display: none;
+}

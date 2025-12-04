@@ -1,0 +1,95 @@
+// Forms – Gigabyte theme
+form {
+  background-color: transparent;
+  padding: 0;
+  margin: 0;
+  box-shadow: none;
+  border-radius: 0;
+}
+
+input[type="number"] {
+  text-align: center;
+}
+
+// Auth forms (login / register)
+.auth-form {
+  background-color: #1b1b1b; // same as cards/body
+  padding: 1.75rem 1.5rem;
+  border-radius: $border-radius-base;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.8);
+}
+
+.auth-form h1,
+.auth-form h2 {
+  margin-bottom: 1.25rem;
+}
+
+// Labels & helper text
+.form-label {
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+.form-text {
+  font-size: 0.8rem;
+  color: $gigabyte-gray;
+}
+
+// Inputs & selects
+.form-control,
+.form-select,
+.input-group .form-control {
+  background-color: #1b1b1b !important; // same as body/cards
+  color: #ffffff !important;
+  border-color: rgba(255, 255, 255, 0.25) !important;
+  border-radius: $border-radius-base;
+}
+
+.form-control::placeholder {
+  color: rgba(255, 255, 255, 0.45);
+}
+
+.form-control:focus,
+.form-select:focus {
+  background-color: #1b1b1b !important;
+  border-color: rgba(255, 255, 255, 0.6) !important;
+  box-shadow: 0 0 0 0.16rem rgba(255, 255, 255, 0.25);
+  outline: none;
+}
+
+// Validation states
+.was-validated .form-control:invalid,
+.form-control.is-invalid,
+.was-validated .form-select:invalid,
+.form-select.is-invalid {
+  border-color: #dc3545;
+}
+
+.was-validated .form-control:valid,
+.form-control.is-valid,
+.was-validated .form-select:valid,
+.form-select.is-valid {
+  border-color: #28a745;
+}
+
+.invalid-feedback,
+.valid-feedback {
+  font-size: 0.8rem;
+}
+
+// Password strength helpers
+// (used with validation.js)
+#passwordStrength,
+#passwordMatch {
+  margin-top: 0.25rem;
+}
+
+// Buttons inside auth forms
+.auth-form .btn-primary {
+  border-radius: $border-radius-base;
+}
+
+.auth-form .btn-link {
+  font-size: 0.85rem;
+}

@@ -1,0 +1,206 @@
+// Global layout – dark theme
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background: #121212;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+}
+
+main.container {
+  padding-top: 0rem;
+  margin-top: 0;
+  padding-bottom: 3rem;
+  color: #ffffff;
+}
+
+// Cards (products, panels, etc.)
+
+// Use a dark grey
+.card {
+  background-color: #1b1b1b !important;
+  border-radius: 0.75rem;
+  border: 1px solid rgba(255, 255, 255, 0.06) !important;
+  box-shadow: 0 14px 40px rgba(0, 0, 0, 0.6);
+  transition: transform 0.15s ease-out, box-shadow 0.15s ease-out,
+    border-color 0.15s ease-out;
+}
+
+// All text inside cards white
+.card,
+.card * {
+  color: #ffffff !important;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  border-color: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.8);
+}
+
+// Category badge on product cards
+.badge-category {
+  background: rgba(255, 255, 255, 0.08);
+  color: #ffffff;
+  font-size: 0.75rem;
+  padding: 0.35rem 0.6rem;
+  border-radius: 999px;
+}
+
+// Tables (cart, admin lists)
+
+.table {
+  background-color: transparent !important;
+  color: #ffffff !important;
+}
+
+// General table cell styling
+.table th,
+.table td {
+  background-color: transparent !important;
+  color: #ffffff !important;
+  border-color: rgba(255, 255, 255, 0.12) !important;
+  padding: 1.2rem 0.8rem !important;
+  font-size: 1.25rem !important;
+}
+
+// Header row (Product / Price / Quantity / Total)
+.table thead th {
+  border-bottom-width: 1px;
+  font-size: 1.5rem !important;
+  font-weight: 700 !important;
+  padding: 1.5rem 1rem !important;
+}
+
+// Price & Total columns
+.table tbody td:nth-child(2),
+.table tbody td:nth-child(4) {
+  font-size: 1.35rem !important;
+  font-weight: 600 !important;
+}
+
+// Quantity box
+.table input[type="number"] {
+  font-size: 1.3rem !important;
+  height: 52px !important;
+  width: 90px !important;
+  border-radius: 10px !important;
+  text-align: center !important;
+  background-color: #222 !important;
+  color: #fff !important;
+  border: 1px solid #555 !important;
+}
+
+// Remove button
+.btn-outline-danger {
+  font-size: 1.2rem !important;
+  padding: 0.65rem 1.4rem !important;
+  border-radius: 10px !important;
+}
+
+// Total row (bottom)
+.table tfoot th {
+  font-size: 1.8rem !important;
+  font-weight: 700 !important;
+  padding-top: 1.5rem !important;
+}
+
+// Cart / wrappers
+
+.cart-container,
+.cart-wrapper,
+.cart-box {
+  background-color: transparent !important;
+  box-shadow: none !important;
+  border: none !important;
+}
+
+// Footer
+
+footer.bg-dark,
+footer {
+  background-color: #121212 !important;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  color: #ffffff;
+  font-size: 0.8rem;
+}
+
+// Links & small tweaks
+
+a {
+  color: #4ea8ff;
+}
+
+a:hover {
+  color: #79c1ff;
+}
+
+input[type="number"] {
+  text-align: center;
+}
+
+// Product cards – align images & text
+
+.product-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.product-card .card-img-top {
+  width: 100%;
+  height: 260px;
+  object-fit: contain; // fit inside without cropping
+  padding: 0.75rem;
+}
+
+.product-card .card-body {
+  display: flex;
+  flex-direction: column;
+}
+
+.product-card .card-title {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 0.4rem;
+}
+
+.product-card .card-text {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.product-card .card-body .btn {
+  margin-top: auto; // push button to bottom of card
+  align-self: flex-start;
+}
+
+.product-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.product-link:hover {
+  text-decoration: none;
+}
+
+.product-card a.product-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.product-card {
+  overflow: hidden;
+}
+
+.product-card img {
+  width: 100%;
+  height: auto;
+}

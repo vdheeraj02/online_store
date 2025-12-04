@@ -1,0 +1,68 @@
+// Checkout page
+.checkout-container {
+  width: 100%;
+  max-width: 1400px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.02);
+  border-radius: 12px;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.25);
+}
+
+.checkout-table {
+  width: 100%;
+  color: #ffffff;
+}
+
+.checkout-table thead th {
+  font-size: 1.5rem !important;
+  font-weight: 700 !important;
+  padding: 1.2rem 0.8rem !important;
+}
+
+.checkout-table tbody td {
+  font-size: 1.25rem !important;
+  padding: 1.2rem 0.8rem !important;
+}
+
+.checkout-product-img {
+  width: 110px;
+  height: 110px;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+.checkout-product-name {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.checkout-product-category {
+  font-size: 0.95rem;
+  color: #9ba3b5;
+}
+
+.checkout-total-row {
+  background: rgba(255, 255, 255, 0.03);
+  font-size: 1.6rem !important;
+  font-weight: 600 !important;
+}
+
+.btn-checkout {
+  background: #007bff;
+  border: none;
+  padding: 0.8rem 2rem;
+  font-size: 1.2rem;
+  border-radius: 8px;
+  font-weight: 600;
+}
+
+.btn-checkout:hover {
+  background: #0a84ff;
+}
+
+.btn-shopping {
+  border-radius: 8px;
+  padding: 0.8rem 1.5rem;
+  font-weight: 600;
+}

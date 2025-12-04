@@ -1,0 +1,13 @@
+// Import order: Bootstrap first, then your custom styles
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+@import "variables";
+@import "layout";
+@import "navbar";
+@import "forms";
+@import "home";
+@import "cart";
+@import "checkout";
+@import "admin";
+@import "reviews";

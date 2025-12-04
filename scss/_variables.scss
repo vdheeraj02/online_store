@@ -1,0 +1,14 @@
+$gigabyte-dark: #050816;
+$gigabyte-dark-alt: #080d1a;
+$gigabyte-blue: #00a6ff;
+$gigabyte-blue-soft: #0084d1;
+$gigabyte-orange: #ff8a00;
+$gigabyte-gray: #a0a7b5;
+$gigabyte-card-bg: #0c1220;
+
+$body-bg: $gigabyte-dark;
+$text-color: #f4f7ff;
+$border-radius-base: 0.75rem;
+
+// Keep compatibility with older SCSS files
+$primary-color: $gigabyte-blue;
