@@ -58,19 +58,21 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $hashed = password_hash($pass, PASSWORD_DEFAULT);
 
             $stmt = $conn->prepare("
-                INSERT INTO users (name, email, password_hash, address, city, province, postal_code)
-                VALUES (?, ?, ?, ?, ?, ?, ?)
+                INSERT INTO users (first_name, last_name, email, address, city, province, postal_code, password_hash)
+                VALUES (?, ?, ?, ?, ?, ?, ?, ?)
             ");
             $stmt->bind_param(
-                'sssssss',
-                $full_name,
+                'ssssssss',
+                $first_name,
+                $last_name,
                 $email,
-                $hashed,
                 $address,
                 $city,
                 $province,
-                $postal_code
+                $postal_code,
+                $hashed
             );
+
 
             if ($stmt->execute()) {
                 header('Location: login.php?success=registered');
